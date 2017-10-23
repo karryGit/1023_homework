@@ -1,0 +1,23 @@
+{
+  "name": "1023_homework",
+  "version": "1.0.0",
+  "description": "使用Vue.js编写的界面效果",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karryGit/1023_homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karryGit/1023_homework/issues"
+  },
+  "homepage": "https://github.com/karryGit/1023_homework#readme"
+}
