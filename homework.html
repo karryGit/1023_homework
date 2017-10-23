@@ -5,12 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>homework</title>
     <script src="node_modules/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="css/homework.css">
+
 </head>
 <body>
 <div id="app">
+    <link rel="stylesheet" :href="css">
     <!--切换按钮部分-->
     <div class="header">
         <img @click="clicked" :class="color" class="header_one" :src="grade"/>
@@ -20,8 +21,9 @@
     <div id="content" class="clear_float">
         <div id="content_left" v-for="value in array" class="float-left">
             <img  :src="value.image" alt="">
-            <a  class="content_a" :href="value.url">
-                <p >{{value.title}}</p>
+            <div class="hengxian"></div>
+            <a class="content_a" :href="value.url">
+                <p class="title">{{value.title}}</p>
             </a>
         </div>
     </div>
@@ -30,7 +32,7 @@
         new Vue({
             el: '#app',
             data: {
-                css:'',
+                css:'css/homework.css',
                 grade:'img/grade.png',
                 list:'img/list.png',
                 color:'',
@@ -70,10 +72,12 @@
                 clicked:function () {
                     this.color = 'color';
                     this.color1 = '';
+                    this.css = 'css/homework.css'
                 },
                 clicked1:function () {
                     this.color1 = 'color';
                     this.color = '';
+                    this.css = 'css/homework1.css'
                 }
             }
         })
